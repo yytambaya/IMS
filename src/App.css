@@ -1,4 +1,106 @@
-.App {
+body{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background: whitesmoke;
+}
+
+/* Header */
+
+header{
+  background: white;
+  display: flex;
+  height: 25vh;
+  justify-content: space-between;
+  align-items: center;
+}
+#ims-name-long{
+  /*background: green;*/
+  margin-left: 20px;
+  font-size: 1.7em;
+  color: black;
+}
+#ims-name-short{
+  display: none;
+}
+nav{
+  display: flex;
+  margin-right: 20px;
+}
+nav > ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul > li{
+  margin-right: 10px;
+}
+
+/*Main*/
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.qa{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  justify-content: space-around;
+  font-size: 1.2em;
+}
+
+/*Footer*/
+footer{
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background: black;
+  color: white;
+}
+#contact{
+  color: white;
+}
+
+/*Links defaults*/
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: none;
+}
+a:active{
+  color: black;
+}
+ul{
+  list-style-type: none;
+}
+
+/* media queries*/
+@media screen and (max-width: 650px){
+  #ims-name-long{
+      display: none;
+  }
+  #ims-name-short{
+    display: inline;
+    margin-left: 20px;
+    font-size: 2.0em;
+}
+
+}
+
+
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +137,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/

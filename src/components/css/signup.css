@@ -1,0 +1,17 @@
+form{
+    height: 60vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+input{
+    width: 300px;
+    height: 30px; 
+}
+#submit{
+    width: 100px;
+    align-self: center;
+    border: 0px solid black;
+    background:white;
+    font-size: 1.0em;
+}
